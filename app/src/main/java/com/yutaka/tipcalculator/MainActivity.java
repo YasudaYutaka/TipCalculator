@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
             textViewTotalValue.setText("$" + String.format("%.2f", dTotal));
 
             // split part
-            people = seekBarSplit.getProgress() + 1; // +1 por conta seekbar que começa 0
+            people = seekBarSplit.getProgress() + 1; // +1 por conta seekbar que começa 0 e quero que comece no 1
             double dTipValuePerson = dTip / people;
             double dTotalValuePerson = dTotal / people;
             textViewTipPersonValue.setText("$" + String.format("%.2f", dTipValuePerson));
