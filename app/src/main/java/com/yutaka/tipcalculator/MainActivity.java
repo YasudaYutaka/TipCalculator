@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
 
                // percent = i;
-                textViewTipPercent.setText(Math.round(i) + "%"); // arredonda o número // +1 por conta do seekbark começa em 0 e quero que comece em 1
+                textViewTipPercent.setText(Math.round(i) + "%"); // arredonda o número
                 calculate();
 
             }
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 //people = i;
-                textViewSplitPersonQuantity.setText(Integer.toString(i+1));
+                textViewSplitPersonQuantity.setText(Integer.toString(i+1)); // +1 por conta do seekbark começa em 0 e quero que comece em 1
                 calculate(); // maybe ?
             }
 
